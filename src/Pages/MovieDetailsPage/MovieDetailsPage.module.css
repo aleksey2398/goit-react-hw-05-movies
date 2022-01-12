@@ -1,0 +1,62 @@
+.Container {
+    display: flex;
+    border-bottom: 1px solid #000;
+  }
+  
+  .Image {
+    margin: 20px;
+  }
+  
+  .InfoTitle {
+    margin: 20px;
+  }
+  
+  .AdditionalInfo {
+    margin: 20px;
+  }
+  
+  .Link {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  
+  .Link:hover {
+    color: red;
+  }
+  
+  .CastLink {
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+  }
+  
+  .ReviewItem {
+    list-style: none;
+  }
+  
+  .AdditionalInfo {
+    margin: 0;
+    border-bottom: 1px solid #000;
+  }
+  
+  .Button {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: #000000 solid 1px;
+    cursor: pointer;
+  }
+  
+  .Button:hover,
+  .Button:focus {
+    color: white;
+    background: rgb(133, 5, 48);
+  }

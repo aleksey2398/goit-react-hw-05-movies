@@ -1,0 +1,17 @@
+.List {
+    margin-left: 10px;
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .Link {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .Link:hover,
+  .Link:focus {
+    color: red;
+    font-size: 23px;
+  }
