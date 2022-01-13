@@ -1,6 +1,6 @@
-// import { useState, useEffect } from "react";
+//import { useState, useEffect } from "react";
 import { getTrendingMovies } from "../../Shared/services/movies";
-// import { useLocation } from "react-router-dom";
+//import { useLocation } from "react-router-dom";
 import MovieList from "../../Client/MovieList/MovieList";
 import { useFetch } from "../../Shared/hooks";
 

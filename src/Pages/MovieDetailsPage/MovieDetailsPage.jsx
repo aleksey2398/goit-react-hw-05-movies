@@ -10,9 +10,11 @@ import {
   Route,
   useHistory,
 } from "react-router-dom";
-import Spinner from "../../Client/Spinner/Spinner";
+//import Spinner from "../../Client/Spinner/Spinner";
 import styles from "./MovieDetailsPage.module.css";
 import { routes } from "../../Shared/services/routes";
+import {Audio} from "react-loader-spinner";
+
 
 const CastPage = lazy(() => import("./CastPage"));
 const ReviewsPage = lazy(() => import("./ReviewPage"));
@@ -98,7 +100,13 @@ const MovieDetailsPage = () => {
             </nav>
           </div>
 
-          <Suspense fallback={<Spinner />}>
+          <Suspense fallback={<Audio
+      type="Puff"
+      color="#00BFFF"
+      height={100}
+      width={100}
+      timeout={3000}
+    />}>
             <Switch>
               <Route path="/movies/:id/credits">
                 <CastPage />
