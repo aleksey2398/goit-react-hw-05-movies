@@ -30,7 +30,10 @@ const MovieDetailsPage = () => {
       try {
         const { data } = await getMovieInfo(movieId);
         setMovie(data);
-      } catch (error) {}
+      } catch (error) {
+console.log(error);
+      }
+  
     };
     fetchMovie();
   }, [movieId]);
@@ -90,7 +93,7 @@ const MovieDetailsPage = () => {
                 to={{
                   pathname: `/movies/${movieId}/reviews`,
                   state: {
-                    from: location.state.from,
+                    from: location.state?.from,
                   },
                 }}
                 className={styles.Link}
